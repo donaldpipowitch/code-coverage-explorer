@@ -18,8 +18,8 @@
     "dist"
   ],
   "scripts": {
-    "start": "node dist/check",
-    "build": "tsc -p src"
+    "build": "tsc -p src",
+    "preversion": "yarn build"
   },
   "devDependencies": {
     "@types/convert-source-map": "^1.5.1",
