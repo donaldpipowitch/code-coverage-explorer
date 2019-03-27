@@ -1499,10 +1499,10 @@ which@^1.2.9:
   dependencies:
     isexe "^2.0.0"
 
-workspace-release@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/workspace-release/-/workspace-release-0.5.0.tgz#1da407461047fbfe5217a0efcd510fb3c7d30eaa"
-  integrity sha512-RRdjYFWPEaFBJ5yXVT7WZO+17ug6UoTecm6pTW0d5mxXZhydvgkymRMnBBIA/7z0Eqo/4h9JH5lovQUMHtzzYA==
+workspace-release@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/workspace-release/-/workspace-release-0.5.1.tgz#69ab8161b2b4ab4330ed35b31f08c08f9167862b"
+  integrity sha512-h9YvqmpZwCXVU1nOveNxqllcr/hhOVZHJj7T0DOQQmmT+Ykz5FHPLXDrQeC+7CjEuoAkImoeGlIvj16Ofs05YA==
   dependencies:
     "@hutson/set-npm-auth-token-for-ci" "^3.0.2"
     chalk "^2.4.2"
