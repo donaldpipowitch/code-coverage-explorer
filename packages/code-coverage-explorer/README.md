@@ -24,7 +24,7 @@ After the installation you can use the `code-coverage-explorer` command like thi
 $ code-coverage-explorer --file /path/to/coverage.json
 ```
 
-This shows all files which have less than 50% of unused code by default. If you want to change this threshold (e.g. set it to 10%) you can do it like this:
+This shows all files which have less than 50% of used code by default. If you want to change this threshold (e.g. set it to 10%) you can do it like this:
 
 ```bash
 $ code-coverage-explorer --file /path/to/coverage.json --threshold 0.1
@@ -39,11 +39,11 @@ Reports look like this:
 
 "http://localhost:8080/config.js" has no source map. Skipped.
 
-"http://localhost:8080/index.js" has 4 files with less than 50% unused code:
-  Unused code in "webpack:///shared/src/components/Logo/assets/internal-logo.svg": 0%
-  Unused code in "webpack:///shared/src/components/Auth/NoHashError.ts": 2%
-  Unused code in "webpack:///Users/pipo/workspace/some-project/node_modules/core-js/library/modules/_dom-create.js": 10%
-  Unused code in "webpack:///Users/pipo/workspace/some-project/node_modules/core-js/library/modules/_html.js": 11%
+"http://localhost:8080/index.js" has 4 files with less than 50% of used code:
+  Used code in "webpack:///shared/src/components/Logo/assets/internal-logo.svg": 0%
+  Used code in "webpack:///shared/src/components/Auth/NoHashError.ts": 2%
+  Used code in "webpack:///Users/pipo/workspace/some-project/node_modules/core-js/library/modules/_dom-create.js": 10%
+  Used code in "webpack:///Users/pipo/workspace/some-project/node_modules/core-js/library/modules/_html.js": 11%
 ```
 
 (Note: You can also use this package as a lib: `require('code-coverage-explorer').check(require('/path/to/coverage.json'))`.)

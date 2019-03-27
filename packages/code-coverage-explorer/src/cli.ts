@@ -49,22 +49,22 @@ async function showReport({ file, threshold }: ShowReportOptions) {
         );
         if (filtered.length === 0) {
           console.log(
-            `"${url}" has no file with less than ${thresholdPercent}% unused code.`
+            `"${url}" has no file with less than ${thresholdPercent}% of used code.`
           );
         } else if (filtered.length === 1) {
           console.log(
-            `"${url}" one file with less than ${thresholdPercent}% unused code:`
+            `"${url}" one file with less than ${thresholdPercent}% of used code:`
           );
           const percent = Math.round(filtered[0].coverage * 100);
-          console.log(`  Unused code in "${filtered[0].source}": ${percent}%`);
+          console.log(`  Used code in "${filtered[0].source}": ${percent}%`);
         } else {
           const count = filtered.length;
           console.log(
-            `"${url}" has ${count} files with less than ${thresholdPercent}% unused code:`
+            `"${url}" has ${count} files with less than ${thresholdPercent}% of used code:`
           );
           filtered.forEach((result) => {
             const percent = Math.round(result.coverage * 100);
-            console.log(`  Unused code in "${result.source}": ${percent}%`);
+            console.log(`  Used code in "${result.source}": ${percent}%`);
           });
         }
         break;
