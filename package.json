@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "lint": "prettier --loglevel warn --write \"**/*.{ts,tsx,json,md}\"",
+    "ci": "yarn build && yarn lint && yarn audit",
+    "release": "workspace-version"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3",
+    "workspace-release": "^0.4.5",
+    "wsrun": "^3.3.3"
+  }
+}
