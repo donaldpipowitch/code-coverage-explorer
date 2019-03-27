@@ -1,6 +1,6 @@
 {
   "name": "code-coverage-explorer",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Shows original source code of unused code coverage reports if source maps are available.",
   "author": "Donald Pipowitch",
   "main": "dist/check",
