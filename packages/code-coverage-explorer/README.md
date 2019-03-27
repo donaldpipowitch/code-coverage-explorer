@@ -21,13 +21,13 @@ $ yarn global add code-coverage-explorer
 After the installation you can use the `code-coverage-explorer` command like this:
 
 ```bash
-$ code-coverage-explorer --path /path/to/coverage.json
+$ code-coverage-explorer --file /path/to/coverage.json
 ```
 
 This shows all files which have less than 50% of unused code by default. If you want to change this threshold (e.g. set it to 10%) you can do it like this:
 
 ```bash
-$ code-coverage-explorer --path /path/to/coverage.json --threshold 0.1
+$ code-coverage-explorer --file /path/to/coverage.json --threshold 0.1
 ```
 
 You can get a `coverage.json` [as explained here](https://developers.google.com/web/updates/2019/01/devtools#coverage).
